@@ -246,7 +246,7 @@ sup {
 }
 
 a {
-  color: var(--bs-link-color);
+  color: #664d03;
   text-decoration: underline;
 }
 a:hover {
@@ -497,6 +497,10 @@ progress {
   font-weight: 300;
   line-height: 1.2;
 }
+
+.display-1 {
+  text-align: center; /* Center the text horizontally */
+}
 @media (min-width: 1200px) {
   .display-1 {
     font-size: 5rem;
@@ -527,7 +531,7 @@ progress {
 
 .display-4 {
   font-size: calc(1.475rem + 2.7vw);
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
@@ -2781,7 +2785,7 @@ textarea.form-control-lg {
   --bs-btn-hover-border-color: transparent;
   --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
   --bs-btn-disabled-opacity: 0.65;
-  --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), .5);
+  --bs-btn-focus-box-shadow: 0 0 0 0.25rem #664d03;
   display: inline-block;
   padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
   font-family: var(--bs-btn-font-family);
@@ -2794,8 +2798,8 @@ textarea.form-control-lg {
   vertical-align: middle;
   cursor: pointer;
   -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  user-select: none;
   border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
   border-radius: var(--bs-btn-border-radius);
   background-color: var(--bs-btn-bg);
@@ -2847,18 +2851,18 @@ textarea.form-control-lg {
 .btn-primary {
   --bs-btn-color: #fff;
   --bs-btn-bg: #664d03ab;
-  --bs-btn-border-color: #2937f0;
+  --bs-btn-border-color: #293806;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #232fcc;
-  --bs-btn-hover-border-color: #212cc0;
+  --bs-btn-hover-bg: #664d03;
+  --bs-btn-hover-border-color: #664d03;
   --bs-btn-focus-shadow-rgb: 73, 85, 242;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #212cc0;
-  --bs-btn-active-border-color: #1f29b4;
+  --bs-btn-active-bg: #664d03;
+  --bs-btn-active-border-color: #664d03;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #2937f0;
-  --bs-btn-disabled-border-color: #2937f0;
+  --bs-btn-disabled-bg: #664d03;
+  --bs-btn-disabled-border-color: #664d03;
 }
 
 .btn-secondary {
@@ -8160,11 +8164,12 @@ textarea.form-control-lg {
 }
 
 section.bg-light {
-  background-color: beige; /* This sets a fallback background color */
-  background-image: url('https://trendyartideas.com/wp-content/uploads/2021/09/Fashion-dress-illustration-by-Tess.jpg'); /* Replace with your image path */
-  background-position: center; /* Center the image */
-  background-size: cover; /* Scale the image to cover the section */
+  background-color: beige; /* Fallback background color */
+  background-image: url('https://cdn.discordapp.com/attachments/1117105934938931240/1269854030293766195/shebatech_create_three_images_that_represent_global_culteral_fa_4935cc5d-9f2e-4c17-b657-c4f32a8fd40e.png?ex=66c60279&is=66c4b0f9&hm=6fafd797f0025d33d5ae68862fb0d8ab7a033ad30b09f37c8ac482c769c29aea&');
+  background-position: center top; /* Position the image to focus on the top */
+  background-size: cover; /* Ensure the image covers the entire section */
   background-repeat: no-repeat; /* Prevent the image from repeating */
+  height: 100vh; /* Optional: Ensure the section takes up the full viewport height */
 }
 
 .bg-dark {
@@ -10886,7 +10891,7 @@ section {
   color: #6c757d;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active {
-  color: #2937f0;
+  color: #664d03;
 }
 
 /*!
@@ -11241,7 +11246,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Kanit', sans-serif; /* Kanit for buttons and emphasized text */
   font-weight: 400;
   text-transform: uppercase;
-  color: #fff; /* White text for contrast */
+  color: rgb(15,15,15); /* White text for contrast */
 }
 
 .lead {
@@ -11300,8 +11305,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   text-transform: uppercase;
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #664d03;
+  border-color: #664d03;
 }
 
 .btn-primary:hover {
@@ -11321,5 +11326,122 @@ h1, h2, h3, h4, h5, h6 {
   color: #333;
 }
 
+.cta {
+  position: relative; /* Ensure the pseudo-element is positioned relative to this container */
+  overflow: hidden; /* Prevent the pseudo-element from overflowing outside the container */
+}
 
+.cta:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://cdn.discordapp.com/attachments/1117105934938931240/1269854009083039825/shebatech_create_three_images_that_represent_global_culteral_fa_b82245a5-5cbe-4b4f-b8c1-e5a93482f4d9.png?ex=66c60274&is=66c4b0f4&hm=53316239bbffb9db07ae92fb44be08f5475cb105c3be771fd19fa28a24edb283&');
+  background-position: center top; /* Position the image to focus on the top part */
+  background-size: cover; /* Ensure the image covers the entire section */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  z-index: -1; /* Place the pseudo-element behind the content */
+  opacity: 1; /* Remove any transparency to ensure image is clear */
+  filter: none; /* Ensure no blur or other effects are applied */
+}
+
+.row {
+  position: relative;
+  z-index: 1; /* Ensure the content is on top of the background */
+}
+
+.col-12 {
+  padding: 2rem;
+  color: #fff; /* Text color for contrast against the background */
+}
+
+
+.cta {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 10%;
+}
+
+.cta:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://cdn.discordapp.com/attachments/1117105934938931240/1269854030293766195/shebatech_create_three_images_that_represent_global_culteral_fa_4935cc5d-9f2e-4c17-b657-c4f32a8fd40e.png?ex=66c60279&is=66c4b0f9&hm=6fafd797f0025d33d5ae68862fb0d8ab7a033ad30b09f37c8ac482c769c29aea&');
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  transform: rotate(180deg); /* Flip the background image upside down */
+}
+
+.cta .container {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding-top: 10%;
+}
+
+h2.display-1 {
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem; /* Add or adjust this line to move the text down */
+}
+
+.btn {
+  margin-top: 1rem;
+}
+
+.cta:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://cdn.discordapp.com/attachments/1117105934938931240/1269854030293766195/shebatech_create_three_images_that_represent_global_culteral_fa_4935cc5d-9f2e-4c17-b657-c4f32a8fd40e.png?ex=66c60279&is=66c4b0f9&hm=6fafd797f0025d33d5ae68862fb0d8ab7a033ad30b09f37c8ac482c769c29aea&');
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  transform: rotate(180deg) scaleX(-1); /* Flip the image upside down and mirror it horizontally */
+}
+
+section.bg-light {
+  position: relative;
+  background-color: beige;
+  background-image: url('https://cdn.discordapp.com/attachments/1117105934938931240/1269854030293766195/shebatech_create_three_images_that_represent_global_culteral_fa_4935cc5d-9f2e-4c17-b657-c4f32a8fd40e.png?ex=66c60279&is=66c4b0f9&hm=6fafd797f0025d33d5ae68862fb0d8ab7a033ad30b09f37c8ac482c769c29aea&');
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top */
+  text-align: center;
+  padding-top: 0; /* Remove padding to move content higher */
+}
+
+.col-12.text-center {
+  z-index: 1;
+  color: white;
+  margin-top: -200px; /* Increase negative margin significantly */
+  padding-top: 0; /* Remove any padding that might be pushing the content down */
+}
+
+.col-12.text-center a.btn {
+  display: inline-block;
+  margin-top: 0; /* Remove margin to bring the button closer to the text */
+}
+
+h2.display-1 {
+  margin-bottom: 1rem; /* Reduce space between heading and button */
+}
 
